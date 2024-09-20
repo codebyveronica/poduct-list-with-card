@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    /* Colors */
+    --red: #c73a0f;
+    --green: #1ea475;
+    --rose50: #fcf9f7;
+    --rose100: #f4edeb;
+    --rose300: #c9aea6;
+    --rose400: #ad8985;
+    --rose500: #87635a;
+    --rose900: #260f08;
+
+    /* Font */
+    --font: "Red Hat Text", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--rose50);
+    margin: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-header {
+    position: relative;
+}
+
+.card button {
+    position: absolute;
+    bottom: -5%;
+    left: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 155px;
+
+    background-color: #fff;
+    color: var(--rose900);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--rose900);
+}
+
+.card p {
+    color: var(--rose500);
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.card h2 {
+    margin-top: 5px;
+    color: var(--rose900);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card strong {
+    display: block;
+    color: var(--red);
+    font-size: 18px;
+    margin-top: 5px;
+}
