@@ -29,31 +29,36 @@ body {
     margin: 30px;
 }
 
+.models {
+    display: none;
+}
+
 h1 {
     font-size: 40px;
     padding-bottom: 25px;
 }
 
-.container {
+.desserts-area {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.card {
-    width: 100%;
+.dessert-item {
+    width: 370px;
 }
 
-.card img {
+.dessert-item .dessert-img {
     width: 100%;
     border-radius: 10px;
 }
 
-.card-header {
+.dessert-header {
     position: relative;
 }
 
-.card button {
+.dessert-item button {
     position: absolute;
     bottom: -5%;
     left: 25%;
@@ -73,22 +78,136 @@ h1 {
     border: 1px solid var(--rose900);
 }
 
-.card p {
+.dessert-item button:hover {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.dessert-item .dessert-category {
     color: var(--rose500);
     font-weight: 400;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
-.card h2 {
-    margin-top: 5px;
+.dessert-item h2 {
+    margin-top: 4px;
     color: var(--rose900);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 650;
 }
 
-.card strong {
+.dessert-item strong {
     display: block;
     color: var(--red);
     font-size: 18px;
-    margin-top: 5px;
+    font-weight: 650;
+    margin-top: 4px;
+    margin-bottom: 25px;
+}
+
+.cart {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.cart h2 {
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.cart .empty img {
+    display: block;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.cart .empty p {
+    color: var(--rose400);
+    font-weight: 600;
+    margin: 20px 0 20px;
+}
+
+.cart-item {
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--rose100);
+}
+
+.cart-item h3 {
+    font-size: 16px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+
+.cart-item .quantity {
+    color: var(--red);
+    font-weight: 650;
+    padding-right: 10px;
+}
+
+.cart-item .item-price {
+    color: var(--rose500);
+    padding-right: 5px;
+}
+
+.cart-item .item-total-price {
+    display: inline-block;
+    color: var(--rose500);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.cart-item button {
+    position: absolute;
+    right: 0;
+    top: 20%;
+
+    background: none;
+    border: none;
+}
+
+.cart-item > button svg {
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    border: 2px solid var(--rose300);
+    border-radius: 50%;
+}
+
+.cart .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--rose900);
+    font-weight: 450;
+}
+
+.total strong {
+    font-size: 28px;
+}
+
+.ecology {
+    background-color: var(--rose100);
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 25px 0 25px;
+}
+
+.ecology svg {
+    vertical-align: bottom;
+    padding-right: 1px;
+}
+
+.cart button {
+    color: white;
+    background-color: var(--red);
+    font-size: 18px;
+    font-weight: 450;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 40px;
 }
