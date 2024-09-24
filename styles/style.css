@@ -68,11 +68,13 @@ h1 {
     justify-content: space-between;
 
     width: 155px;
+    height: 42px;
 
     background-color: #fff;
     color: var(--rose900);
     font-size: 15px;
     font-weight: 700;
+    cursor: pointer;
     padding: 10px 20px;
     border-radius: 50px;
     border: 1px solid var(--rose900);
@@ -83,10 +85,62 @@ h1 {
     border-color: var(--red);
 }
 
+svg {
+    pointer-events: none;
+}
+
+.counter {
+    position: absolute;
+    bottom: -5%;
+    left: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 155px;
+    height: 42px;
+
+    color: white;
+    background-color: var(--red);
+    color: var(--rose900);
+    padding: 13px 10px;
+    border-radius: 50px;
+}
+
+.increment, .decrement {
+    position: absolute;
+    cursor: pointer;
+    width: 15px;   
+    height: 17px;
+}
+
+.increment {
+    right: 10px;
+}
+
+.decrement {
+    left: 10px;
+}
+
+.counter svg {
+    padding: 2px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.quantity {
+    color: white;
+    font-size: 12px;
+}
+
+
 .dessert-item .dessert-category {
     color: var(--rose500);
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .dessert-item h2 {
@@ -140,7 +194,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.cart-item .quantity {
+.cart-item .item-quantity {
     color: var(--red);
     font-weight: 650;
     padding-right: 10px;
@@ -210,4 +264,9 @@ h1 {
     padding: 20px;
     border: none;
     border-radius: 40px;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
 }
