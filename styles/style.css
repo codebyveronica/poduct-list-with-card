@@ -29,36 +29,32 @@ body {
     margin: 30px;
 }
 
-.models {
-    display: none;
-}
-
 h1 {
     font-size: 40px;
     padding-bottom: 25px;
 }
 
-.desserts-area {
+.products-area {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
-.dessert-item {
-    width: 370px;
+.product-item {
+    width: 350px;
 }
 
-.dessert-item .dessert-img {
+.product-item .product-img {
     width: 100%;
     border-radius: 10px;
 }
 
-.dessert-header {
+.product-header {
     position: relative;
 }
 
-.dessert-item button {
+.product-item .addCart {
     position: absolute;
     bottom: -5%;
     left: 25%;
@@ -80,7 +76,7 @@ h1 {
     border: 1px solid var(--rose900);
 }
 
-.dessert-item button:hover {
+.product-item .addCart:hover {
     color: var(--red);
     border-color: var(--red);
 }
@@ -137,20 +133,20 @@ svg {
 }
 
 
-.dessert-item .dessert-category {
+.product-item .product-category {
     color: var(--rose500);
     font-weight: 400;
     margin-top: 25px;
 }
 
-.dessert-item h2 {
+.product-item h2 {
     margin-top: 4px;
     color: var(--rose900);
     font-size: 18px;
     font-weight: 650;
 }
 
-.dessert-item strong {
+.product-item strong {
     display: block;
     color: var(--red);
     font-size: 18px;
@@ -167,6 +163,7 @@ svg {
 
 .cart h2 {
     color: var(--red);
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
@@ -184,46 +181,48 @@ svg {
 
 .cart-item {
     position: relative;
-    margin-bottom: 20px;
     border-bottom: 1px solid var(--rose100);
 }
 
-.cart-item h3 {
-    font-size: 16px;
+.item-name {
+    font-size: 14px;
     font-weight: 650;
-    margin-bottom: 10px;
+    margin: 20px 0 5px;
 }
 
-.cart-item .item-quantity {
+.item-quantity {
     color: var(--red);
+    font-size: 14px;
     font-weight: 650;
-    padding-right: 10px;
+    padding-right: 12px;
 }
 
-.cart-item .item-price {
+.item-price {
     color: var(--rose500);
+    font-size: 14px;
     padding-right: 5px;
 }
 
-.cart-item .item-total-price {
+.item-total-price {
     display: inline-block;
     color: var(--rose500);
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.cart-item button {
+.cart-item .remove-cart {
     position: absolute;
     right: 0;
     top: 20%;
-
+    
     background: none;
     border: none;
 }
 
-.cart-item > button svg {
-    height: 20px;
-    width: 20px;
+.cart-item .remove-cart > svg {
+    height: 18px;
+    width: 18px;
     padding: 2px;
     border: 2px solid var(--rose300);
     border-radius: 50%;
@@ -234,7 +233,10 @@ svg {
     align-items: center;
     justify-content: space-between;
 
+    margin-top: 20px;
+
     color: var(--rose900);
+    font-size: 15px;
     font-weight: 450;
 }
 
@@ -255,13 +257,13 @@ svg {
     padding-right: 1px;
 }
 
-.cart button {
+.cart .confirm-order-btn {
     color: white;
     background-color: var(--red);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 450;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     border: none;
     border-radius: 40px;
 }
