@@ -1,0 +1,227 @@
+@media screen and (min-width: 1200px) {
+    :root {
+        /* Colors */
+        --red: #c73a0f;
+    }
+
+    .container-body {
+        display: grid;
+        grid-template-columns: 3(1fr);
+        grid-row: 3(1fr);
+        padding: 60px 100px;
+    }
+
+    header {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    h1 {
+        text-indent: 12px;
+        font-size: 32px;
+    }
+
+    .products-area {
+        grid-column: 1 / 2;
+        row-gap: 2 / 3;
+    }
+
+    .product-item {
+        width: 200px;
+    }
+
+    .product-item .addCart {
+        left: 20%;
+
+        width: 120px;
+        height: 30px;
+
+        font-size: 10px;
+
+        transition: .2s;
+    }
+
+    .product-item .addCart>svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .counter {
+        left: 20%;
+
+        width: 120px;
+        height: 30px;
+
+        font-size: 5px;
+    }
+
+    .increment,
+    .decrement {
+        width: 10px;
+        height: 12px;
+    }
+
+    .increment:hover > svg path {
+        fill: var(--red);
+    }
+
+    .decrement:hover > svg path {
+        fill: var(--red);
+    }
+
+    .increment:hover svg, .decrement:hover svg {
+        background-color: white;
+    }
+
+    .counter svg {
+        height: 12px;
+        width: 12px;
+
+        transition: 0.1s;
+    }
+
+    .quantity {
+        color: white;
+        font-size: 10px;
+    }
+
+    .product-item .product-category {
+        color: var(--rose500);
+        font-size: 11px ;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    
+    .product-item h2 {
+        margin-top: 4px;
+        color: var(--rose900);
+        font-size: 12px;
+        font-weight: 650;
+    }
+    
+    .product-item strong {
+        display: block;
+        color: var(--red);
+        font-size: 12px;
+        font-weight: 650;
+        margin-top: 4px;
+        margin-bottom: 25px;
+    }
+
+    .cart-container {
+        grid-column: 3;
+        grid-row: 1 / 3;
+
+        padding-left: 10px;
+    }
+
+    .cart {
+        width: 300px;
+        padding: 20px;
+    }
+    
+    .cart h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .cart .empty img {
+        width: 100px;
+        margin-top: 40px;
+    }
+    
+    .cart .empty p {
+        font-size: 12px;
+        text-align: center;
+        margin: 10px 0 5px;
+    }
+    
+    .item-name {
+        font-size: 10px;
+        font-weight: 650;
+        margin: 15px 0 0;
+    }
+    
+    .item-quantity {
+        font-size: 10px;
+        padding-right: 10px;
+    }
+    
+    .item-price {
+        color: var(--rose500);
+        font-size: 10px;
+        padding-right: 5px;
+    }
+    
+    .item-total-price {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .cart-item .remove-cart {
+        position: absolute;
+        right: 0;
+        top: 20%;
+    
+        cursor: pointer;
+        
+        background: none;
+        border: none;
+    }
+    
+    .cart-item .remove-cart > svg {
+        height: 12px;
+        width: 12px;
+        padding: 1px;
+        border: 1.5px solid var(--rose300);
+
+        transition: 0.1s;
+    }
+
+    .cart-item .remove-cart:hover > svg path {
+        fill: black;
+    }
+
+    .cart-item .remove-cart:hover > svg {
+        border: 1.5px solid black;
+    }
+    
+    .cart .total {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    
+    .total strong {
+        font-size: 18px;
+    }
+    
+    .ecology {
+        font-size: 10px;
+        padding: 10px;
+        margin: 20px 0 20px;
+    }
+    
+    .ecology svg {
+        vertical-align: middle;
+        width: 17px;
+        padding-right: 1px;
+    }
+    
+    .cart .confirm-order-btn {
+        color: white;
+        background-color: var(--red);
+        font-size: 12px;
+        font-weight: 450;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 40px;
+
+        transition: .2s;
+    }
+
+    .cart .confirm-order-btn:hover {
+        background-color: #952c0c;
+    }
+}
