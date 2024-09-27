@@ -14,16 +14,19 @@
     header {
         grid-column: 1 / 3;
         grid-row: 1;
+
+        padding: 0 15px 20px;
     }
 
     h1 {
-        text-indent: 12px;
         font-size: 32px;
     }
 
     .products-area {
         grid-column: 1 / 2;
         row-gap: 2 / 3;
+
+        padding: 0px;
     }
 
     .product-item {
@@ -139,7 +142,7 @@
     .item-name {
         font-size: 10px;
         font-weight: 650;
-        margin: 15px 0 0;
+        margin: 10px 0 0;
     }
     
     .item-quantity {
@@ -155,7 +158,7 @@
     
     .item-total-price {
         font-size: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     
     .cart-item .remove-cart {
@@ -222,6 +225,95 @@
     }
 
     .cart .confirm-order-btn:hover {
+        background-color: #952c0c;
+    }
+
+    .modal-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal-cart {
+        position: relative;
+        top: -75px;
+        width: 480px;
+        height: auto;
+        line-height: normal;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .modal-cart svg {
+        width: 32px;
+    }
+
+    .modal-cart h2 {
+        font-size: 30px;
+        line-height: normal;
+        margin: 0px;
+    }
+
+    .modal-cart p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .itens-ordered {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .item-ordered {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .item-ordered img {
+        width: 36px;
+    }
+
+    .item-ordered-data .item-ordered-name {
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    .item-ordered-data .item-ordered-quantity {
+        font-size: 10px;
+        padding-right: 11px;
+    }
+    
+    .item-ordered-data .item-ordered-price {
+        font-size: 10px;
+    }
+
+    .item-ordered-data .item-ordered-total-price {
+        font-size: 12px;
+    }
+
+    .itens-ordered .order-total {
+        font-size: 10px;
+        margin: 15px 0 0;
+    }
+    
+    .order-total .modal-total {
+        font-size: 18px;
+    }
+
+    .new-order {
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 40px;
+        margin-bottom: 0;
+
+        transition: .1s;
+    }
+
+    .new-order:hover {
         background-color: #952c0c;
     }
 }
