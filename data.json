@@ -15,7 +15,7 @@
     {
 	"id": 1,
         "image": {
-            "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+            "thumbnail": "./images/image-creme-brulee-thumbnail.jpg",
             "mobile": "./images/image-creme-brulee-mobile.jpg",
             "tablet": "./images/image-creme-brulee-tablet.jpg",
             "desktop": "./images/image-creme-brulee-desktop.jpg"

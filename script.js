@@ -4,8 +4,10 @@ const cartQuantTxt = document.querySelector('#quantity-cart')
 const addCartButtons = document.querySelectorAll('[data-btn-id=addCartBtn]');
 const totalPriceTxt = document.querySelector('#total-price');
 const confirmOrderButton = document.querySelector('#confirm-btn');
+const modalContainer = document.querySelector('.modal-container');
 const orderedHTMLArea = document.querySelector('.itens-ordered-area');
 const orderTotalPrice = document.querySelector('.modal-total');
+const startNewOrderButton = document.querySelector('.new-order');
 
 let listProducts = [];
 let carts = [];
@@ -19,7 +21,7 @@ const addDataToHTML = () => {
             newProduct.classList.add('product-item');
             newProduct.dataset.id = product.id;
             newProduct.innerHTML = `
-                <div class="product-header">
+            <div class="product-header">
                 <img class="product-img" src="${product.image.desktop}" alt="">
                 <button class="addCart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
@@ -85,14 +87,29 @@ cartAreaHTML.addEventListener('click', (event) => {
 });
 
 confirmOrderButton.addEventListener('click', (e) => {
-    const modalContainer = document.querySelector('.modal-container');
-    const cartContainer = document.querySelector('.cart-container');
-
-    productsAreaHTML.classList.add('hide');
-    cartContainer.classList.add('hide');
     modalContainer.classList.remove('hide');
 
     addOrderedItemsToModal();
+})
+
+startNewOrderButton.addEventListener('click', (event) => {
+    let counters = document.querySelectorAll('.counter');
+    let selecteds = document.querySelectorAll('.product-img');
+    
+    modalContainer.classList.add('hide');
+
+    counters.forEach(counter => {
+        counter.classList.add('hide');
+    })
+    selecteds.forEach(selected => {
+        selected.classList.remove('selected');
+    })
+    
+    localStorage.clear('cart');
+
+    carts.length = 0;
+
+    addCartToHTML();
 })
 
 const addOrderedItemsToModal = () => {
@@ -126,8 +143,9 @@ const addOrderedItemsToModal = () => {
         });
         
         let totalElement = document.createElement('p');
+        totalElement.classList.add("order-total");
         totalElement.innerHTML = `
-            <p class="order-total">Order Total <strong class="modal-total">$${totalOrderPrice.toFixed(2)}</strong></p>
+            Order Total <strong class="modal-total">$${totalOrderPrice.toFixed(2)}</strong>
         `;
         orderedHTMLArea.appendChild(totalElement);
     } 
@@ -137,19 +155,20 @@ const removeItemFromCart = (product_id) => {
     let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);
     
     if (positionThisProductInCart >= 0) {
-       const productElement = productsAreaHTML.querySelector(`[data-id="${product_id}"]`);
-       const quantityElement = productElement.querySelector('.quantity');
-       const productImage = productElement.querySelector('.selected');
-       const parentElement = quantityElement.parentNode;
+        const productElement = productsAreaHTML.querySelector(`[data-id="${product_id}"]`);
+        const quantityElement = productElement.querySelector('.quantity');
+        const productImage = productElement.querySelector('.selected');
+        const parentElement = quantityElement.parentNode;
 
-       carts.splice(positionThisProductInCart, 1);
-       
-       quantityElement.innerText = '';
-       parentElement.classList.add('hide');
-       productImage.classList.remove('selected');
+        carts.splice(positionThisProductInCart, 1);
+
+        quantityElement.innerText = '';
+        parentElement.classList.add('hide');
+        productImage.classList.remove('selected');
+    }
 
        addCartToHTML();
-    }
+       addCartToMemory()
 }
 
 const addToCart = (product_id) => {
@@ -241,7 +260,6 @@ const addCartToHTML = () => {
         });
     }
     cartQuantTxt.innerHTML = `(${totalQuantity})`;
-
     totalPriceTxt.innerHTML = `$${totalPrice.toFixed(2)}`;
 }
 
