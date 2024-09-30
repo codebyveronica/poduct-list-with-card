@@ -67,9 +67,9 @@
      {
 	"id": 5,
         "image": {
-            "thumbnail": "/images/image-meringue-thumbnail.jpg",
-            "mobile": "/images/image-meringue-mobile.jpg",
-            "tablet": "/images/image-meringue-tablet.jpg",
+            "thumbnail": "./images/image-meringue-thumbnail.jpg",
+            "mobile": "./images/image-meringue-mobile.jpg",
+            "tablet": "./images/image-meringue-tablet.jpg",
             "desktop": "/images/image-meringue-desktop.jpg"
         },
         "name": "Lemon Meringue Pie",
@@ -80,10 +80,10 @@
      {
 	"id": 6,
         "image": {
-            "thumbnail": "/images/image-cake-thumbnail.jpg",
-            "mobile": "/images/image-cake-mobile.jpg",
-            "tablet": "/images/image-cake-tablet.jpg",
-            "desktop": "/images/image-cake-desktop.jpg"
+            "thumbnail": "./images/image-cake-thumbnail.jpg",
+            "mobile": "./images/image-cake-mobile.jpg",
+            "tablet": "./images/image-cake-tablet.jpg",
+            "desktop": "./images/image-cake-desktop.jpg"
         },
         "name": "Red Velvet Cake",
         "category": "Cake",
