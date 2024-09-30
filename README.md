@@ -29,12 +29,9 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](./screenshots/screenshot-desktop.png)
-![desktop interactivity](./screenshots/screenshot-desktop-interactivity)
-![desktop modal](./screenshots/screenshot-desktop-modal)
-![mobile](./screenshots/screenshot-mobile.png)
-![mobile interactivity](./screenshots/screenshot-mobile-interactivity)
-![mobile modal](./screenshots/screenshot-mobile-modal)
+![](./screenshots/screenshot-desktop.png)
+![](./screenshots/screenshot-desktop-interactivity.png)
+![](./screenshots/screenshot-desktop-modal.png)
 
 
 ### Links
