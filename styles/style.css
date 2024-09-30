@@ -27,6 +27,7 @@
 body {
     position: relative;
     background-color: var(--rose50);
+    padding-bottom: 30px;
 }
 
 header {
@@ -165,7 +166,6 @@ svg {
 
 .cart-container {
     padding: 0 30px;
-    margin-bottom: 30px;
 }
 
 .cart {
@@ -316,14 +316,14 @@ svg {
 }
 
 .modal-cart h2 {
-    font-size: 38px;
+    font-size: 40px;
     line-height: 45px;
     margin: 10px 0 5px;
 }
 
 .modal-cart p {
     color: var(--rose500);
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 30px;
 }
 
@@ -386,7 +386,7 @@ svg {
     justify-content: space-between;
     color: black;
     font-size: 14px;
-    margin: 30px 0 5px;
+    margin: 20px 0 5px;
 }
 
 .order-total .modal-total {
