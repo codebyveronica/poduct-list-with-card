@@ -35,7 +35,7 @@ header {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .products-area {
@@ -78,7 +78,7 @@ h1 {
 
     background-color: #fff;
     color: var(--rose900);
-    font-size: 15px;
+    font-size: 0.93rem;
     font-weight: 700;
     cursor: pointer;
     padding: 10px 20px;
@@ -139,7 +139,7 @@ svg {
 
 .quantity {
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .product-item .product-category {
@@ -151,14 +151,14 @@ svg {
 .product-item h2 {
     margin-top: 4px;
     color: var(--rose900);
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 650;
 }
 
 .product-item strong {
     display: block;
     color: var(--red);
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 650;
     margin-top: 4px;
     margin-bottom: 25px;
@@ -179,7 +179,7 @@ svg {
 
 .cart h2 {
     color: var(--red);
-    font-size: 25px;
+    font-size: 1.56rem;
     margin-bottom: 30px;
 }
 
@@ -191,7 +191,7 @@ svg {
 
 .cart .empty p {
     color: var(--rose400);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 600;
     text-align: center;
     margin: 20px 0 20px;
@@ -203,28 +203,28 @@ svg {
 }
 
 .item-name {
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 650;
     margin: 20px 0 5px;
 }
 
 .item-quantity {
     color: var(--red);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 650;
     padding-right: 12px;
 }
 
 .item-price {
     color: var(--rose500);
-    font-size: 14px;
+    font-size: 0.87rem;
     padding-right: 5px;
 }
 
 .item-total-price {
     display: inline-block;
     color: var(--rose500);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -256,12 +256,12 @@ svg {
     margin-top: 20px;
 
     color: var(--rose900);
-    font-size: 15px;
+    font-size: 0.93rem;
     font-weight: 450;
 }
 
 .total strong {
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .ecology {
@@ -281,7 +281,7 @@ svg {
 .cart .confirm-order-btn {
     color: white;
     background-color: var(--red);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 450;
     width: 100%;
     padding: 15px;
@@ -316,14 +316,14 @@ svg {
 }
 
 .modal-cart h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 45px;
     margin: 10px 0 5px;
 }
 
 .modal-cart p {
     color: var(--rose500);
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 30px;
 }
 
@@ -353,7 +353,7 @@ svg {
 }
 
 .item-ordered-data .item-ordered-name {
-    font-size: 13px;
+    font-size: 0.81rem;
     font-weight: 650;
     margin-bottom: 5px;
 }
@@ -361,14 +361,14 @@ svg {
 .item-ordered-data .item-ordered-quantity {
     display: inline-block;
     color: var(--red);
-    font-size: 13px;
+    font-size: 0.81rem;
     font-weight: 650;
     padding-right: 11px;
 }
 
 .item-ordered-data .item-ordered-price {
     color: var(--rose500);
-    font-size: 13px;
+    font-size: 0.81rem;
 }
 
 .item-ordered-data .item-ordered-total-price {
@@ -376,7 +376,7 @@ svg {
     top: 11px;
     right: 0;
 
-    font-size: 15px;
+    font-size: 0.93rem;
     font-weight: 650;
 }
 
@@ -385,7 +385,7 @@ svg {
     align-items: center;
     justify-content: space-between;
     color: black;
-    font-size: 14px;
+    font-size: 0.87rem;
     margin: 20px 0 5px;
 }
 
@@ -396,7 +396,7 @@ svg {
 .new-order {
     color: white;
     background-color: var(--red);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 450;
     width: 100%;
     padding: 15px;

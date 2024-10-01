@@ -39,7 +39,7 @@
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .products-area {
@@ -59,7 +59,7 @@
         width: 120px;
         height: 30px;
 
-        font-size: 10px;
+        font-size: 0.62rem;
 
         transition: .2s;
     }
@@ -75,7 +75,7 @@
         width: 120px;
         height: 30px;
 
-        font-size: 5px;
+        font-size: 0.31rem;
     }
 
     .increment,
@@ -110,7 +110,7 @@
 
     .product-item .product-category {
         color: var(--rose500);
-        font-size: 11px ;
+        font-size: 0.68rem;
         font-weight: 400;
         margin-top: 20px;
     }
@@ -118,14 +118,14 @@
     .product-item h2 {
         margin-top: 4px;
         color: var(--rose900);
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 650;
     }
     
     .product-item strong {
         display: block;
         color: var(--red);
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 650;
         margin-top: 4px;
         margin-bottom: 25px;
@@ -144,7 +144,7 @@
     }
     
     .cart h2 {
-        font-size: 18px;
+        font-size: 1.12rem;
         margin-bottom: 15px;
     }
     
@@ -154,13 +154,13 @@
     }
     
     .cart .empty p {
-        font-size: 12px;
+        font-size: 0.75rem;
         text-align: center;
         margin: 10px 0 5px;
     }
     
     .item-name {
-        font-size: 10px;
+        font-size: 0.62rem;
         font-weight: 650;
         margin: 10px 0 0;
     }
@@ -172,12 +172,12 @@
     
     .item-price {
         color: var(--rose500);
-        font-size: 10px;
+        font-size: 0.62rem;
         padding-right: 5px;
     }
     
     .item-total-price {
-        font-size: 10px;
+        font-size: 0.62rem;
         margin-bottom: 10px;
     }
     
@@ -210,16 +210,16 @@
     }
     
     .cart .total {
-        font-size: 11px;
+        font-size: 0.68rem;
         margin-top: 15px;
     }
     
     .total strong {
-        font-size: 18px;
+        font-size: 1.12rem;
     }
     
     .ecology {
-        font-size: 10px;
+        font-size: 0.62rem;
         padding: 10px;
         margin: 20px 0 20px;
     }
@@ -233,7 +233,7 @@
     .cart .confirm-order-btn {
         color: white;
         background-color: var(--red);
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 450;
         width: 100%;
         padding: 10px;
@@ -273,13 +273,13 @@
     }
 
     .modal-cart h2 {
-        font-size: 30px;
+        font-size: 1.87rem;
         line-height: normal;
         margin: 0px;
     }
 
     .modal-cart p {
-        font-size: 12px;
+        font-size: 0.75rem;
         margin-bottom: 20px;
     }
 
@@ -298,34 +298,34 @@
     }
 
     .item-ordered-data .item-ordered-name {
-        font-size: 10px;
+        font-size: 0.62rem;
         margin-bottom: 0px;
     }
 
     .item-ordered-data .item-ordered-quantity {
-        font-size: 10px;
+        font-size: 0.62rem;
         padding-right: 11px;
     }
     
     .item-ordered-data .item-ordered-price {
-        font-size: 10px;
+        font-size: 0.62rem;
     }
 
     .item-ordered-data .item-ordered-total-price {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .itens-ordered .order-total {
-        font-size: 10px;
+        font-size: 0.62rem;
         margin: 15px 0 0;
     }
     
     .order-total .modal-total {
-        font-size: 18px;
+        font-size: 1.12rem;
     }
 
     .new-order {
-        font-size: 12px;
+        font-size: 0.75rem;
         padding: 10px;
         border-radius: 40px;
         margin-bottom: 0;
